@@ -1,0 +1,28 @@
+body {
+    font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+}
+
+.navbar {
+    background-color: #e15f41;
+}
+
+.nav .nav-link.active{
+    background-color: #fff;
+    color: #e15f41;
+}
+
+.nav .nav-link, 
+.navbar-brand, 
+.navbar-brand:hover{
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    font-size: 26px;
+}
+
+.navbar-toggler {
+    background-color: #ffeae6;
+    color: #e15f41;
+}
