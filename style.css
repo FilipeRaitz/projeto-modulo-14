@@ -18,8 +18,15 @@ body {
 }
 
 .navbar-brand {
+    font-size: 2em;
+}
+
+.section-title {
     font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
-    font-size: 26px;
+}
+
+.section-title span {
+    color: #e15f41;
 }
 
 .navbar-toggler {

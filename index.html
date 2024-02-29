@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4">
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabeçalho">
         <div class="container">
-            <h1 class="navbar-brand m-0">Ristorante</h1>
+            <h1 class="navbar-brand m-0 section-title">Ristorante</h1>
             <button class="navbar-toggler"
                     data-bs-toggle="collapse" data-bs-target="#menu-nav">
                 <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
             <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">
+                        <a class="nav-link" href="#restaurante">
                             <i class="bi bi-house-fill me-1"></i>
                             Conheça o restaurante
                         </a>
@@ -46,9 +46,57 @@
                 </ul>
             </nav>
         </div>
-
     </header>
-
+    <div data-bs-spy="scroll" data-bs-target="#cabeçalho">
+        <section id="restaurante">
+            <div class="carousel slide" data-bs-ride="carousel" id="carrossel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2500">
+                        <img src="/images/slides/slide1.png" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="/images/slides/slide2.png" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2500">
+                        <img src="/images/slides/slide3.png" alt="">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#carrossel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#carrossel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carrossel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/restaurante.jpg" class="d-block w-100 rounded" alt="foto interna do restaurante">
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="section-title">Sobre <span>o restaurante</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugiat eos dolorem cum voluptas facere aliquid, libero impedit soluta deserunt mollitia itaque, laboriosam nam laudantium quisquam, deleniti modi. Omnis, minima?
+                            </p>
+                            <h3 class="section-title">Sobre <span>o espaço</span></h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem consectetur odio nesciunt libero molestias tenetur ipsa, aspernatur debitis esse quae animi explicabo recusandae, dolores laboriosam quis totam adipisci blanditiis maiores.</p>
+                            <ul>
+                                <li>Item</li>
+                                <li>Item</li>
+                                <li>Item</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
