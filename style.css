@@ -2,18 +2,23 @@ body {
     font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
 }
 
-.navbar {
+a {
+    text-decoration: none;
+}
+
+#cabeçalho.navbar {
     background-color: #e15f41;
 }
 
-.nav .nav-link.active{
+#cabeçalho .nav .nav-link.active{
     background-color: #fff;
     color: #e15f41;
 }
 
-.nav .nav-link, 
+#cabeçalho .nav .nav-link, 
 .navbar-brand, 
-.navbar-brand:hover{
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover{
     color: #fff;
 }
 
@@ -22,14 +27,53 @@ body {
 }
 
 .section-title {
-    font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    font-family: "Pacifico",'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
 }
 
-.section-title span {
+.section-title span, .text-colored {
     color: #e15f41;
 }
 
 .navbar-toggler {
     background-color: #ffeae6;
     color: #e15f41;
+}
+
+#restaurante, #cardapio {
+    background-color: #ffeae6;
+}
+
+.nav-cardapio .nav-link.active{
+    background-color: #e15f41;
+    color: #fff;
+}
+
+.nav-cardapio .nav-link,
+.nav-cardapio .nav-link:hover {
+    color: #e15f41;
+}
+
+.social-links {
+    display: flex;
+    gap: .5em;
+}
+
+.social-links li {
+    list-style: none;
+}
+
+a i {
+    color: black;
+}
+
+#fale-conosco button {
+    background-color: #e15f41;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+@media (max-width: 767px) {
+    .carousel.item img {
+        height: 200px;
 }
