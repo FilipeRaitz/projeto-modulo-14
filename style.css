@@ -70,10 +70,12 @@ a i {
     background-color: #e15f41;
     color: #fff;
     font-weight: bold;
-    margin-top: 2em;
+    margin: 2em 0;
 }
 
 @media (max-width: 767px) {
     .carousel.item img {
+        display: block;
         height: 200px;
+    }
 }
